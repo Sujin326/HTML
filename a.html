@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--웹페이지를 한글로 지정하여 새로고침 할 때마다 번역창 안 뜸 -->
+<head>
+    <title>Page Title</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" 
+    href="http://ggoreb.com/logo.jpg">
+    <!-- Open Graph(카톡에 보낼 수 있음) -->
+    <meta property="og:image" 
+    content="http://ggoreb.com/images/luffy.jpg">
+    <meta checked="utf-8">
+    <style> 
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    </head>
+
+<body>
+    <!-- 표 만들기 -->
+    <table>
+        <tr><!-- th는 입력값 진하게 구분 / rowspan, colspan 행, 열 합치기:기존 값 밀림(기존 값 제거))-->
+            <th rowspan="2">번호</th>
+            <td colspan="2">이름</td>
+        </tr>
+        <tr>
+            <!-- 특정 표 클릭하면 문구창 뜨게 하기 -->
+            <td onclick="alert('메롱입니다')">김</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <hr>
+    <img src="sun.jpg" alt="태양사진" 
+    onerror="this.src = 'error.png'">
+    <!-- 링크 생성/페이지 이동 -->
+    <a href="http://cafe.naver.com">이동</a>
+    <a href="연습1.html">이동</a>
+     <!-- 이미지 생성/해상도 조절 -->
+    <img src="luffy.jpg" width="200px" height="200px">
+    <!-- 폰트 사이즈 조절-->
+    <h1 style="font-size: 20px;">My First Heading</h1>
+    <p>My first paragraph.</p>
+    <hr>
+    <p>한줄</p>
+    <p>두줄</p>
+    <span>단어1</span>
+    <span>단어2</span>
+    <p>
+        첫번째<br>
+        두&nbsp;번&nbsp;&nbsp;&nbsp;째
+    </p>
+    My first paragraph.한글
+</body>
+
+</html>
